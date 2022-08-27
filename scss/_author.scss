@@ -1,0 +1,25 @@
+@use "globals" as g;
+
+// Author
+.author {
+  color: g.$soft;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  gap: 1rem;
+  font-size: 15px;
+
+  img {
+    width: 30px;
+  }
+
+  span {
+    color: g.$white;
+    transition: all 0.3s;
+
+    &:hover {
+      color: g.$cyan;
+      cursor: pointer;
+    }
+  }
+}
