@@ -29,28 +29,24 @@ body {
     border-radius: 10px;
     overflow: hidden;
     position: relative;
-    cursor: pointer;
 
-    &:hover > &--overlay {
+    &:hover::before {
       opacity: 1;
     }
 
-    &--overlay {
-      opacity: 0;
+    &::before {
+      content: url("../assets/icon-view.svg");
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: g.$cyan-hover;
-      transition: all 0.5s;
       display: flex;
       justify-content: center;
       align-items: center;
-
-      img {
-        width: 50px;
-      }
+      background: g.$cyan-hover;
+      transition: all 0.5s;
+      opacity: 0;
     }
   }
 
@@ -62,7 +58,6 @@ body {
 
     &:hover {
       color: g.$cyan;
-      cursor: pointer;
     }
   }
 

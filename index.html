@@ -5,34 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body>
     <main class="card">
-      <div class="card__img">
-        <img src="assets/image-equilibrium.jpg" alt="The card NFT photo" />
-        <div class="card__img--overlay">
-          <img src="assets/icon-view.svg" alt="Eye Icon" />
-        </div>
-      </div>
-      <h1 class="card__title">Equilibrium #3429</h1>
+      <a href="#" class="card__img">
+        <img src="assets/image-equilibrium.jpg" alt="" aria-hidden="true" />
+      </a>
+      <a href="#" aria-label="Page Title" class="card__title">Equilibrium #3429</a>
       <p class="card__para">Our Equilibrium collection promotes balance and calm.</p>
-      <div class="date">
-        <div class="date__left">
-          <img src="assets/icon-ethereum.svg" alt="Etherium Icon" />
-          <span>0.041 ETH</span>
-        </div>
-        <div class="date__right">
-          <img src="assets/icon-clock.svg" alt="Clock Icon" />
-          <span>3 days left</span>
-        </div>
-      </div>
-      <hr />
+
+      <!-- Using ul -->
+      <ul class="date">
+        <li class="date__left">
+          <img src="assets/icon-ethereum.svg" alt="" aria-hidden="true" />
+          <p>0.041 ETH</p>
+        </li>
+        <li class="date__right">
+          <img src="assets/icon-clock.svg" alt="" aria-hidden="true" />
+          <p>3 days left</p>
+        </li>
+      </ul>
+
       <div class="author">
-        <img src="assets/image-avatar.png" alt="Profile Picture" />
-        <p>Creation of <span>Jules Wyvern</span></p>
+        <img
+          src="assets/image-avatar.png"
+          alt="Jules Wyvern, the user of this account and etherium holder"
+        />
+        <p>Creation of <a href="#">Jules Wyvern</a></p>
       </div>
     </main>
 

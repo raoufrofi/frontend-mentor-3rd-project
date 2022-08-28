@@ -36,6 +36,7 @@ $white: hsl(0, 0%, 100%);
 
 img {
   width: 100%;
+  display: block;
 }
 
 @mixin breakpoint($size) {
